@@ -7,7 +7,7 @@ public class Atividade6 {
         String nome1,nome2;
         int idade1,idade2;
 
-        System.out.println("informe o primeiro nome");
+        System.out.print("informe o primeiro nome");
         nome1 = input.next();
 
         System.out.println("Informe a primeria idade");
@@ -21,8 +21,10 @@ public class Atividade6 {
 
         if(idade1 > idade2){
             System.out.print("Ele é o mais velho entre os dois:" + nome1);
+            System.out.println("Sua idade é" + idade1);
         }else if(idade2 > idade1){
             System.out.print("Ele é o mais velho entre os dois:" + nome2);
+            System.out.println("Sua idade é:"+ idade2);
 
 
         }
