@@ -14,9 +14,26 @@ public class Atividade4 {
 
         imc = peso / (alt * alt);
 
-        if(imc ){
+        if(imc <= 18.5){
             System.out.print("Abaixo do peso");
-        }
+            System.out.printf("Seu IMC é : " + imc);
+        }else if(imc >= 18.5 && imc <= 24.9){
+            System.out.print("Peso normal");
+            System.out.printf("Seu IMC é" + imc);
+        }else if(imc >= 25.0 && imc <= 29.9){
+            System.out.print("Sobrepeso");
+            System.out.printf("Seu IMC é" + imc);
+        }else if(imc >= 30.0 && imc <= 34.9){
+            System.out.print("Obesidade grau 1");
+            System.out.printf("Seu IMC é" + imc);
+        }else if(imc >= 35.0 && imc <= 39.9){
+            System.out.print("Obesidade grau 2");
+            System.out.printf("Seu IMC é" + imc);
+         }else{
+            System.out.print("Obesidade grau 3");
+            System.out.printf("Seu IMC é" + imc);
+
+         }
     
     }   
 }
